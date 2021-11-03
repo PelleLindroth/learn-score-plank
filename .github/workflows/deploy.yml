@@ -8,6 +8,7 @@ jobs:
     name: Deploy to Firebase
     runs-on: ubuntu-latest
     steps:
+      - run: npm run build:prod
       - uses: actions/checkout@v2
       - uses: lowply/deploy-firebase@v0.0.5
         env:
