@@ -8,10 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build
-       - uses: actions/checkout@v2
-       run: |
-        npm ci
-        npm run build:prod
+      - uses: actions/checkout@v2
+        run: |
+          npm ci
+          npm run build:prod
 
       - name: Deploy
       - uses: actions/checkout@v2
