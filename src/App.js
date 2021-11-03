@@ -62,7 +62,7 @@ const StartPage = () => {
 			<Link href="/score">
 				<a className="link fs8 fw4">Score view</a>
 			</Link>
-			<div className="fs5">Open this on your TV</div>
+			<div className="fs5">Open this on your TVC15</div>
 			<div className="h15"></div>
 			<Link href="/judge">
 				<a className="link fs8 fw4">Judge view</a>
