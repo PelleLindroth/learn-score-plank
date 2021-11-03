@@ -3,9 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@sentry/react": "^6.13.3",
+    "@sentry/tracing": "^6.13.3",
+    "firebase": "^9.2.0",
+    "logrocket": "^2.1.1",
     "ramda": "^0.27.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-firebase-hooks": "^4.0.0",
     "wouter": "^2.8.0-alpha.1"
   },
   "homepage": "https://Cottin.github.io/cool-problems",
@@ -33,7 +38,8 @@
     "analyze:prod": "cross-env NODE_ENV=production BUNDLE_ANALYZE=true webpack --mode production",
     "analyze:dev": "cross-env BUNDLE_ANALYZE=true webpack --mode development",
     "test-ci": "mocha ./problems/**/test*.js --exit",
-    "test": "mocha ./problems/**/test*.js --parallel --watch"
+    "test": "mocha ./problems/**/test*.js --parallel --watch",
+    "deploy": "npm run build:prod && firebase deploy && rm -rf dist"
   },
   "eslintConfig": {
     "extends": [

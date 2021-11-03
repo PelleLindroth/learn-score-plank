@@ -1,3 +1,9 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -6,138 +12,149 @@
 }
 
 .start-page {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 10vh;
   padding: 3rem;
 }
 
 .link {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .score-page {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-around;
-	height: 100vh;
-	width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  width: 100vw;
 }
 
 .player-score {
-	text-align: center;
+  text-align: center;
 }
 
 .score {
-	font-weight: 600;
-	font-size: 30vw;
+  font-weight: 600;
+  font-size: 30vw;
 }
 .player {
-	font-size: 7vw;
+  font-size: 7vw;
 }
 
 .blue {
-	color: blue;
+  color: blue;
 }
 
 .red {
-	color: red;
+  color: red;
 }
 
 .judge-page {
-	display: flex;
-	flex-direction: column;
-	width: 100vw;
-	height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
 }
 .ju-player-row {
-	height: 35vh;
-	width: 100vw;
-	justify-content: space-between;
-	display: flex;
-	flex-direction: row;
-	align-items: stretch;
-	margin-bottom: 3vh;
+  height: 30vh;
+  width: 100vw;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  margin-bottom: 5vh;
 }
-.ju-blue {}
-.ju-red {}
+/* .ju-blue {
+}
+.ju-red {
+} */
 .ju-minus {
-	width: 20vw;
-	color: white;
-	opacity: 0.3;
+  width: 25vw;
+  color: white;
 }
 .ju-player {
-	width: 30vw;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .ju-points {
-	font-size: 15vw;
+  font-size: 10vw;
+  margin: 0;
+  padding: 0;
 }
-.ju-blue .ju-player { color: blue; }
-.ju-red .ju-player { color: red; }
+.ju-blue .ju-player {
+  color: blue;
+}
+.ju-red .ju-player {
+  color: red;
+}
 .ju-name {
-	font-size: 3vw;
-	font-weight: 700;
+  font-size: 2.5vw;
+  font-weight: 700;
 }
 .ju-plus {
-	width: 50vw;
+  width: 25vw;
 }
-.ju-plus, .ju-minus {
-	color: white;
-	font-size: 20vw;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
+.ju-plus,
+.ju-minus {
+  color: white;
+  font-size: 18vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
-.ju-blue .ju-plus, .ju-blue .ju-minus {
-	background-color: blue;
+.ju-blue .ju-plus,
+.ju-blue .ju-minus {
+  background-color: blue;
 }
-.ju-red .ju-plus, .ju-red .ju-minus {
-	background-color: red;
+.ju-red .ju-plus,
+.ju-red .ju-minus {
+  background-color: red;
 }
 
 .settings-row {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .ju-set {
-	background-color: #b3b3b3;
-	color: white;
-	height: 24vh;
-	width: 30vw;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 4vw;
-	font-weight: 700;
-	text-align: center;
-	cursor: pointer;
+  background-color: #b3b3b3;
+  color: white;
+  height: 24vh;
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4vw;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
 }
 .ju-name-row {
-	height: 35vh;
-	width: 100vw;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	margin-bottom: 3vh;
+  height: 35vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3vh;
 }
 .ju-name-row-blue {
-	background-color: blue;
+  background-color: blue;
 }
 .ju-name-row-red {
-	background-color: red;
+  background-color: red;
 }
 .ju-input {
-	height: 10vh;
-	width: 70vw;
-	font-size: 7	vw;
+  height: 10vh;
+  width: 70vw;
+  font-size: 5vw;
+  padding: 1rem;
 }
