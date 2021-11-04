@@ -99,7 +99,6 @@ const JudgePage = () => {
 	const pl2input = useRef(null)
 
 	const db = getDatabase()
-	gtag('event', 'load_judge', { 'method': 'Google' })
 
 	if (error) { return <p>Could not connect to database. Try reloading the page</p> }
 	if (loading) { return <p>Loading...</p> }
@@ -107,6 +106,8 @@ const JudgePage = () => {
 	const data = snapshot.val()
 
 	const changeScore = (key, amount) => {
+		gtag('event', 'change_score', { 'player': `Player ${key}` })
+
 		if (data[`player${key}`].score < 1 && amount < 0) { return }
 
 		if (data[`player${key}`].score > 19 && amount > 0) {
