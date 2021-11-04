@@ -1,0 +1,41 @@
+[debug] [2021-11-04T20:13:16.534Z] ----------------------------------------------------------------------
+[debug] [2021-11-04T20:13:16.535Z] Command:       /Users/pellelindroth/.nvm/versions/node/v14.17.6/bin/node /usr/local/bin/firebase deploy
+[debug] [2021-11-04T20:13:16.535Z] CLI Version:   7.16.2
+[debug] [2021-11-04T20:13:16.535Z] Platform:      darwin
+[debug] [2021-11-04T20:13:16.535Z] Node Version:  v14.17.6
+[debug] [2021-11-04T20:13:16.536Z] Time:          Thu Nov 04 2021 21:13:16 GMT+0100 (Central European Standard Time)
+[debug] [2021-11-04T20:13:16.536Z] ----------------------------------------------------------------------
+[debug] [2021-11-04T20:13:16.536Z] 
+[debug] [2021-11-04T20:13:16.547Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-11-04T20:13:16.548Z] > authorizing via signed-in user
+[debug] [2021-11-04T20:13:16.548Z] [iam] checking project score-plank-ee749 for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2021-11-04T20:13:16.549Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-11-04T20:13:16.549Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-04T20:13:16.629Z] <<< HTTP RESPONSE 200
+[debug] [2021-11-04T20:13:16.657Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/score-plank-ee749:testIamPermissions  
+
+[debug] [2021-11-04T20:13:17.701Z] <<< HTTP RESPONSE 200
+[debug] [2021-11-04T20:13:17.702Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/score-plank-ee749  
+ 
+[debug] [2021-11-04T20:13:17.963Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'score-plank-ee749'...
+[info] 
+[info] i  deploying database, hosting
+[info] i  database: checking rules syntax...
+[debug] [2021-11-04T20:13:17.966Z] >>> HTTP REQUEST PUT https://score-plank-ee749-default-rtdb.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    ".read": "now < 1638313200000",  // 2021-12-1
+    ".write": "now < 1638313200000",  // 2021-12-1
+  }
+}
+[debug] [2021-11-04T20:13:18.425Z] <<< HTTP RESPONSE 404
+[debug] [2021-11-04T20:13:18.425Z] <<< HTTP RESPONSE BODY {
+  "correctUrl" : "https://score-plank-ee749-default-rtdb.europe-west1.firebasedatabase.app",
+  "error" : "Database lives in a different region. Please change your database URL to https://score-plank-ee749-default-rtdb.europe-west1.firebasedatabase.app"
+}
+
+[error] 
+[error] Error: Unexpected error while deploying database rules.

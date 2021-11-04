@@ -99,6 +99,7 @@ const JudgePage = () => {
 	const pl2input = useRef(null)
 
 	const db = getDatabase()
+	gtag('event', 'load_judge', { 'method': 'Google' })
 
 	if (error) { return <p>Could not connect to database. Try reloading the page</p> }
 	if (loading) { return <p>Loading...</p> }
